@@ -230,7 +230,6 @@ body {
 .banner {
   grid-column: 2/10;
   grid-row: 4/5;
-  background-color: #ccc;
   position: relative;
 }
 
@@ -257,8 +256,7 @@ body {
   border-radius: 1.5rem;
   outline: none;
   position: relative;
-  overflow:hidden;
-
+  overflow: hidden;
 }
 
 .banner-btn-text-one {
@@ -267,17 +265,15 @@ body {
   left: 0;
   transform: translateY(-50%);
   width: 100%;
-  transition: top .2s;
+  transition: top 0.2s;
 }
 
-.banner-btn:hover .banner-btn-text-one{
-  top:-100%;
-
+.banner-btn:hover .banner-btn-text-one {
+  top: -100%;
 }
 
-.banner-btn:hover .banner-btn-text-two{
-  top:50%;
-    
+.banner-btn:hover .banner-btn-text-two {
+  top: 50%;
 }
 .banner-btn-text-two {
   position: absolute;
@@ -288,7 +284,8 @@ body {
 }
 
 .slideshow {
-  display: none;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slide-btn {
@@ -304,11 +301,62 @@ body {
 }
 
 .slideshow-wrapper {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  position: relative;
+  animation:slideshow 20s infinite;
 }
 
 .slide-btn-4 {
 }
 
-.slide {
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  15% {
+    left: -100%;
+  }
+  25% {
+    left: -100%;
+  }
+  30% {
+    left: -200%;
+  }
+  40% {
+    left: -200%;
+  }
+  45% {
+    left: -300%;
+  }
+  55% {
+    left: -300%;
+  }
+  60% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -100%;
+  }
+  85% {
+    left: -100%;
+  }
+  90% {
+    left: 0;
+  }
+}
+
 /* end of banner */
