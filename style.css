@@ -137,7 +137,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 1s;
-  z-index: 10;
+  z-index: 100;
 }
 
 .second-nav-item:first-child:hover .dropdown {
@@ -240,6 +240,7 @@ body {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
+  z-index: 50;
 }
 
 .banner-heading {
@@ -289,15 +290,36 @@ body {
 }
 
 .slide-btn {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #bbb;
+  border: 0.2rem solid #a67c52;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 95%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .slide-btn-1 {
+  left: 47%;
 }
 
 .slide-btn-2 {
+  left: 49%;
+
 }
 
 .slide-btn-3 {
+  left: 51%;
+
+}
+
+.slide-btn-4 {
+  left: 53%;
+
 }
 
 .slideshow-wrapper {
@@ -305,11 +327,10 @@ body {
   width: 400%;
   height: 100%;
   position: relative;
-  animation:slideshow 20s infinite;
+  animation: slideshow 20s infinite;
 }
 
-.slide-btn-4 {
-}
+
 
 .slide img {
   width: 100%;
@@ -359,4 +380,24 @@ body {
   }
 }
 
+.slide-btn:focus{
+  background-color: goldenrod;
+}
+
+.slide-btn-1:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: 0;
+}
+.slide-btn-2:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: -100%;
+}
+.slide-btn-3:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: -200%;
+}
+.slide-btn-4:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: -300%;
+}
 /* end of banner */
