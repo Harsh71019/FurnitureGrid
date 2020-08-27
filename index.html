@@ -15,6 +15,41 @@
     <title>Furniture Grid</title>
   </head>
   <body>
+    <!-- Modal Box -->
+    <input type="checkbox" id="show-hide-forms" hidden/>
+    <div class="form-wrapper">
+      <label for="show-hide-forms" class="x-btn">&#10005;</label>
+      <input type="checkbox" id="show-form" />
+      <div class="show-btn-wrapper">
+        <label for="show-form" class="show-form-btn show-sign-up-form"
+          >Sign Up</label
+        >
+        <label for="show-form" class="show-form-btn show-login-up-form"
+          >Log In</label
+        >
+      </div>
+
+      <form action="" class="signup-form">
+        <h3 class="form-heading">Sign Up</h3>
+        <div class="fullname-inputs-wrapper">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="text" class="form-input" placeholder="Username" />
+        <input type="email" class="form-input" placeholder="Email Address" />
+        <input type="password" class="form-input" placeholder="Password" />
+        <input type="submit" value="Sign Up" class="form-btn" />
+      </form>
+
+      <form action="" class="login-form">
+        <h3 class="form-heading">Login</h3>
+        <input type="text" class="form-input" placeholder="Username" />
+        <input type="email" class="form-input" placeholder="Email Address" />
+        <input type="password" class="form-input" placeholder="Password" />
+        <input type="submit" value="Login" class="form-btn" />
+      </form>
+    </div>
+    <!-- End of Modal Box-->
     <div class="container">
       <!-- navbar -->
       <ul class="social-icons">
