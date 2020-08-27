@@ -22,7 +22,10 @@ body {
       6rem,
       1fr
     );
-  grid-template-rows: repeat(3, min-content) 70vh repeat(5, min-content);
+  grid-template-rows: repeat(3, min-content) 70vh min-content repeat(
+      5,
+      min-content
+    );
   grid-row-gap: 1.6rem;
   margin-top: 1.6rem;
 }
@@ -258,6 +261,7 @@ body {
   outline: none;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .banner-btn-text-one {
@@ -309,17 +313,14 @@ body {
 
 .slide-btn-2 {
   left: 49%;
-
 }
 
 .slide-btn-3 {
   left: 51%;
-
 }
 
 .slide-btn-4 {
   left: 53%;
-
 }
 
 .slideshow-wrapper {
@@ -329,8 +330,6 @@ body {
   position: relative;
   animation: slideshow 20s infinite;
 }
-
-
 
 .slide img {
   width: 100%;
@@ -380,7 +379,7 @@ body {
   }
 }
 
-.slide-btn:focus{
+.slide-btn:focus {
   background-color: goldenrod;
 }
 
@@ -401,3 +400,62 @@ body {
   left: -300%;
 }
 /* end of banner */
+
+/* Day Offer */
+
+.day-offer {
+  grid-column: 2/10;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  grid-gap: 1.6rem 3.2rem;
+  justify-items: center;
+}
+
+.day-offer-img-1 {
+  grid-column: 1/3;
+  grid-row: 1/-1;
+  width: 100%;
+}
+
+.day-offer-heading {
+  grid-column: 3/-1;
+  grid-row: 1/2;
+  font-size: 6rem;
+  color: #a67c52;
+}
+
+.day-offer-paragraph {
+  grid-column: 3/-1;
+  grid-row: 2/3;
+  color: #a67c52;
+  font-size: 3rem;
+}
+
+.day-offer-btn {
+  grid-column: 3/-1;
+  grid-row: 3/4;
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background: linear-gradient(to bottom, #a67c52, goldenrod);
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0.2rem 0.2rem 1rem #777;
+  cursor: pointer;
+}
+
+.day-offer-btn:hover {
+  background: linear-gradient(to bottom, goldenrod, #a67c52);
+}
+.day-offer-img-2 {
+  grid-column: 3/-1;
+  grid-row: 4/-1;
+  width: 100%;
+  align-self: end;
+}
+/* End of Day Offer */
