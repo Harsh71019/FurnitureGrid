@@ -546,7 +546,6 @@ body {
   object-fit: cover;
   opacity: 0.5;
   transition: opacity 0.5s;
-
 }
 .gallery-img:hover {
   opacity: 1;
@@ -603,3 +602,56 @@ body {
 }
 
 /* End of Gallery */
+
+/* Contact */
+.contact {
+  grid-column: 1/-1;
+  grid-row: 8/9;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  background-color: #a67c52;
+  padding: 2rem 0;
+}
+
+.contact-heading {
+  justify-self: end;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+}
+.contact-form input {
+  outline: none;
+  padding: 0.4rem;
+  border: 0.1rem solid #fff;
+}
+
+.contact-input {
+  border-radius: 5rem 0 0 5rem;
+  border-right: none;
+}
+
+.contact-btn {
+  background-color: #a67c52;
+  color: #fff;
+  border-radius: 0 5rem 5rem 0;
+  border-left: none;
+  transition: background-color 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: goldenrod;
+}
+/* End Contact */
+
+.footer{
+  grid-column: 2/10;
+  grid-row: 9/10;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 0 3rem 0;
+  color: #a67c52;
+}
